@@ -2,8 +2,8 @@
 import React from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import Featured from '../components/Featured'
-import FoodList from '../components/FoodList'
+import Featured from '../view/Featured'
+import FoodList from '../view/FoodList'
 import styles from '../styles/Home.module.css'
 import axios from 'axios';
 
