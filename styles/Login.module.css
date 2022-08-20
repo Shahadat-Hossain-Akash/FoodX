@@ -1,0 +1,44 @@
+.container {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    font-family: "gilroyBold";
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper h1{
+    color: #ffc529;
+}
+
+.input {
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    border-radius: 14px;
+    font-family: "gilroyBold";
+    font-size: 16px;
+    background-color: beige;
+}
+.button {
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #ffc529;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: "gilroyBold";
+    font-size: 18px;
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+}
