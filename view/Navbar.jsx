@@ -10,13 +10,17 @@ const Navbar = () => {
     return (
     <div className={styles.container}>
         <div className={styles.item}>
+        <Link href="/" passHref>
             <div className={styles.textLogo}>
             <span className={styles.textLogoFood}>Food</span><span className={styles.textLogoX}>X</span>
             </div>
+        </Link>
         </div>
         <div className={styles.item}>
         <ul className={styles.list}>
+        <Link href="/" passHref>
             <li className={styles.listItem}>Home</li>
+        </Link>
             <li className={styles.listItem}>About</li>
             <li className={styles.listItem}>Menu</li>
             <li className={styles.listItem}>Restaurant</li>
