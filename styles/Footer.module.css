@@ -1,0 +1,123 @@
+/*.container{
+    height: calc(200vh-100px);
+    background-color: #282828;
+    display: flex;
+}
+.item{
+    flex: 1;
+    position: relative;
+}
+*/
+
+.footer{
+    
+
+    font-family: gilroyBold;
+    height: 100%;
+    width: 100%;
+    padding: 100px 20%;
+    background-color: #282828;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    box-shadow: 0px -5px 20px  #111;
+
+}
+
+
+
+
+
+.col2{
+    flex-grow: 2;
+}
+
+
+
+
+.title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    color: #ffc529;
+}
+
+.nav1{
+    font-family: gilroySemiBold;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    font-family: gilroySemiBold;
+    color: #282828;
+    font-size: 15px;
+    padding: 0;
+    width: 400px;
+    height: 45px;
+    border-radius: 12px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 10px 25px #111111;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+
+
+.email:enabled:hover{
+    top: -5px;
+}
+
+
+.submit{
+    font-family: gilroyBold;
+    background: #ffc529;
+    border-radius: 30px;
+    border: none;
+    color: #282828;
+    padding: 10px 30px;
+    box-shadow: 0px 10px 25px #111111;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.submit:hover{
+    top: 5px;
+}
+
+@media screen and (max-width:480px) {
+
+    .footer{
+        flex-direction: column;
+    }
+    .col1{
+        display: none;
+    }
+    .col2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .email{
+        width: 200px;
+    }
+    .col3{
+        display: flex;
+        flex-direction: column;
+    }
+}

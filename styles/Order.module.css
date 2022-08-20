@@ -1,0 +1,199 @@
+.container{
+    padding: 50px;
+    display: flex;
+    background-color: #282828;
+}
+.left{
+    flex: 2;
+    box-shadow: 0px 10px 20px #0c0c0ce1;
+    display: flex;
+    flex-direction: column;
+    line-height: 90px;
+    border-radius: 32px;
+}
+.right{
+    flex: 1;
+    margin-left: 50px;
+}
+.table{
+    width: 100%;
+    border-spacing: 10px;
+    /*box-shadow: 0px 10px 20px #0c0c0ce1;*/
+    border-radius: 16px;
+    table-layout: fixed;
+
+}
+.trTitle{
+    color: #ffc529;
+    align-items: center;
+    height: 50px;
+}
+.tr{
+    font-size: 16px;
+    font-family: gilroyBold;
+    text-align: center;
+    color: #f2f2f2;
+    word-wrap: break-word;
+
+}
+
+.done{
+    font-family: gilroyBold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f2f2f2;
+}
+.inProgress{
+    font-family: gilroyBold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f2f2f2;
+    animation: inProgress 1.5s ease-in-out infinite alternate;
+}
+@keyframes inProgress {
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.undone{
+    font-family: gilroyBold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f2f2f2;
+    opacity: 0.3;
+}
+
+.undone .checkedIcon, .inProgress .checkedIcon{
+    opacity: 0;
+}
+
+.tableStatus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px #0c0c0ce1;
+    border-radius: 32px;
+    background-color: #ffc529;
+    max-height: 900px;
+    padding: 50px;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    font-size: 28px;
+    font-family: gilroyBlack;
+    color: #282828;
+}
+.button{
+    cursor: pointer;
+    font-family: gilroyBold;
+    font-size: 16px;
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: 18px;
+    background-color: #f2f2f2;
+    color: #282828;
+    box-shadow: 0px 5px 10px  #28282856;
+}
+.textBox{
+    font-family: gilroyBold;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    color: #282828;
+}
+.totalDiscountText{
+    display: flex;
+    align-content: flex-end;
+    border-bottom: 2px solid;
+    justify-content: space-between;
+    padding: 10px;
+}
+.totalTextTitle{
+    display: flex;
+    padding: 10px;
+}
+.totalText{
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        flex-direction: column;
+    }
+    .trTitle{
+        display: none;
+    }
+    .tr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .order::before{
+        content: "Order ID: ";
+    }
+    .customer::before{
+        content: "Name : ";
+    }
+    .address::before{
+        content: "Location: ";
+    }
+    .total::before{
+        content: "Total: ";
+    }
+    .tableStatus{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        
+    }
+    .done, .inProgress, .undone{
+        padding: 20px;
+    }
+    .wrapper{
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        float: right;
+        margin-right: -10%;
+        padding: 10px;
+    }
+    .button{
+        width: 280px;
+        margin-bottom: 10px;
+    }
+    .textBox, .totalTextTitle{
+        vertical-align: middle;
+        margin-top: -10px;
+        padding-top: 10px;
+    }
+}
