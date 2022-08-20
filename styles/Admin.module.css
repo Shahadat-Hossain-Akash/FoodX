@@ -1,0 +1,49 @@
+.container{
+    background-color: #282828;
+    padding: 50px;
+    height: 120vh;
+    display: flex;
+    font-family: "gilroyMedium";
+    color: #f2f2f2;
+}
+.item {
+    flex: 1;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button:first-child {
+    background-color: #ffc529;
+    margin-right: 10px;
+    color: #282828;
+    height: 35px;
+    width: 85px;
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.button:last-child {
+    background-color: #ef724c;
+    color: #282828;
+    border-radius: 16px;
+    height: 35px;
+    width: 85px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.trTitle{
+    color: #ffc529;
+}

@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         
         try {
             
-            const product = await Product.create(req.body);
+            const product = await Product.findByIdAndUpdate(id, req.body, {new: true});
             res.status(201).json(product)
 
         } catch (err) {
@@ -35,8 +35,8 @@ export default async function handler(req, res) {
         
         try {
             
-            const product = await Product.create(req.body);
-            res.status(201).json(product)
+            await Product.findByIdAndDelete(id);
+            res.status(200).json("The food has been removed")
 
         } catch (err) {
             
