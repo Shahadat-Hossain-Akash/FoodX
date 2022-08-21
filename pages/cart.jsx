@@ -38,8 +38,7 @@ import OrderDetails from '../view/OrderDetails';
 
 
         const ButtonWrapper = ({ currency, showSpinner }) => {
-            // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
-            // This is the main reason to wrap the PayPalButtons in a new component
+
             const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
         
             useEffect(() => {
@@ -73,7 +72,7 @@ import OrderDetails from '../view/OrderDetails';
                                     ],
                                 })
                                 .then((orderId) => {
-                                    // Your code here after create the order
+                                    
                                     return orderId;
                                 });
                         }}

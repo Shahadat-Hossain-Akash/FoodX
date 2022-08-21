@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 import axios from 'axios';
 import { useState } from "react";
 import AddProduct from '../view/AddProduct';
-import Add from '../view/Add';
+import Add from '../controller/Add';
 
 
 export default function Home({foodList, admin}) {

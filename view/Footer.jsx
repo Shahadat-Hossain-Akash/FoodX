@@ -5,39 +5,6 @@ import Image from "next/image"
 
 const Footer = () => {
     return (
-    /*
-    <div className={styles.container}>
-        <div className={styles.item}>
-            <Image src="/image/footer1.png" alt = "" layout="fill" objectFit="contain"/>
-        </div>
-    <div className={styles.item}>
-        <div className={styles.card}>
-            <h2 className={styles.motto}>Oh yes. We provide the best delivery service everywhere</h2>
-        </div>
-        <div className={styles.card}>
-        <div className={styles.title}>
-            Find Our Restaurant
-            </div>
-            <div className={styles.text}>
-                1654 R, Don road
-                <br/> New York, 85032
-                <br/> (602) 867-2102
-            </div>
-            <div className={styles.text}>
-                1654 R, Don road
-                <br/> New York, 85032
-                <br/> (602) 867-2102
-            </div>
-        </div>
-        <div className={styles.card}>
-            <h1 className={styles.title}>Contact us</h1>
-            <br/> (602) 867-2102
-            <br/> ORDER NOW
-            </div>
-    
-    </div>
-    </div>
-        */
     <div className={styles.footer}>
         <div className={styles.col1}>
             <div className={styles.title}>
