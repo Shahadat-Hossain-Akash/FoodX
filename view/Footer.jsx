@@ -30,8 +30,8 @@ const Footer = () => {
         <div className={styles.text}>
         <div className={styles.title}>Contact us</div>
                 1654 R, Don road
-                <br/> New York, 85032
-                <br/> (602) 867-2102
+                <br/> DHK, 1234
+                <br/> 7542700
             </div>
         </div>
     </div>
