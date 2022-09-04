@@ -26,10 +26,10 @@ const Navbar = () => {
             <li className={styles.listItem}>Restaurant</li>
         </ul>
         </div>
-        <Link href="/cart" passHref>
+        <Link href="/cart" passHref >
         <div className={styles.item}>
-            <div className={styles.cart}>
-                <Image src="/image/Shopping Cart yellow.png" alt="" height= "35" width="35" />
+            <div className={styles.cart} >
+                <Image data-cy="cart-item" src="/image/Shopping Cart yellow.png" alt="" height= "35" width="35" />
                 <div className={styles.counter}>{quantity}</div>
             </div>
         </div>
