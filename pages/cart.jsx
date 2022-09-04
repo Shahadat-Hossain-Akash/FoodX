@@ -181,7 +181,7 @@ import OrderDetails from '../view/OrderDetails';
         </div>
         {open ? (
             <div className={styles.paymentMethods}>
-            <button className={styles.payButton} onClick={() => setCash(true)}>Cash on delivery</button>
+            <button data-cy="pay-in-cash" className={styles.payButton} onClick={() => setCash(true)}>Cash on delivery</button>
             <PayPalScriptProvider
                 options={{
                     "client-id": "AThpN7fNA97c_Zx_SLcT_idEnqVhIYZ7KM2pPrLaQs7dNosh82ZVTNf2qC5i5IwpqGXiC-9sd3ISQiW2",
@@ -198,7 +198,7 @@ import OrderDetails from '../view/OrderDetails';
 			</PayPalScriptProvider>
             </div>
             ) : (
-        <button onClick={() => setOpen(true)} className={styles.button}>Proceed To Pay</button>
+        <button data-cy="payment_button" onClick={() => setOpen(true)} className={styles.button}>Proceed To Pay</button>
         )}
         
             </div>

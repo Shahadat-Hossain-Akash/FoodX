@@ -36,7 +36,7 @@ const Login = () => {
           className={styles.input}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={handleClick} className={styles.button}>
+        <button data-cy = "Login_button" onClick={handleClick} className={styles.button}>
           Sign In
         </button>
         {error && <span className={styles.error}>Wrong Credentials!</span>}

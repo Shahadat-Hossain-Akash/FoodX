@@ -41,7 +41,7 @@ const Index = ({orders, products}) => {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>Products</h1>
-        <table className={styles.table}>
+        <table  className={styles.table}>
           <tbody >
             <tr className={styles.trTitle}>
               <th>Image</th>
@@ -81,7 +81,7 @@ const Index = ({orders, products}) => {
         <h1 className={styles.title}>Order</h1>
         <table className={styles.table}>
           <tbody>
-            <tr className={styles.trTitle}>
+            <tr  className={styles.trTitle}>
               <th>Id</th>
               <th>Customer</th>
               <th>Total</th>
@@ -91,15 +91,15 @@ const Index = ({orders, products}) => {
             </tr>
           </tbody>
         {orderList.map((order) => (
-          <tbody key={order._id}>
-            <tr className={styles.trTitle}>
+          <tbody  key={order._id}>
+            <tr data-cy="order" className={styles.trTitle}>
                 <td>{order._id.slice(0,10)}...</td>
                 <td>{order.customer}</td>
                 <td>{order.total}</td>
                 <td>{order.method === 0 ? <span>cash</span> : <span>paid</span>}</td>
                 <td>{status[order.status]}</td>
                 <td>
-                <button className={styles.button} onClick={() => handleStatus(order._id)}>
+                <button data-cy="next" className={styles.button} onClick={() => handleStatus(order._id)}>
                 Next
             </button>
             

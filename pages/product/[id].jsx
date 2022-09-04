@@ -66,7 +66,7 @@ const Product = ({food}) => {
             <span className={styles.price}>${price}</span>
             <p className={styles.desc}>{food.desc}</p>
             <h3 className={styles.select}>Select the size</h3>
-            <div className={styles.sizes}>
+            <div data-cy="sizes" className={styles.sizes}>
             <div className={styles.sizeContainer}>
                 <div className={styles.size} onClick={()=>handleSize(0)}>
                     
@@ -100,13 +100,13 @@ const Product = ({food}) => {
             className={styles.checkbox}
             />
             
-            <label className="label" htmlFor="mild">{option.text }</label>
+            <label className="label"  htmlFor="mild">{option.text }</label>
         </div>
             ))}
         </div>
         <div className={styles.add}>
-            <input  onChange={(e) => setQuantity(e.target.value)} type="number" defaultValue={0} className={styles.quantity}/>
-            <button className={styles.button} onClick={handleClick} >Add to Cart</button>
+            <input data-cy="quantity" onChange={(e) => setQuantity(e.target.value)} type="number" defaultValue={0} className={styles.quantity}/>
+            <button data-cy="Add-to-cart" className={styles.button} onClick={handleClick} >Add to Cart</button>
         </div>
     </div>
     </div>
